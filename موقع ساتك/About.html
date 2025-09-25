@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#006C35">
+  <title>فريق ساتيك</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;800&display=swap" rel="stylesheet">
+  <script>
+    window.addEventListener("load", () => {
+      document.body.classList.add("ready");
+    });
+  </script>
+</head>
+<body>
+  <header class="header">
+    <a class="logo" href="index.html">
+      <img src="assets/logo.jpg" alt="شعار ساتيك" width="40" height="40" loading="lazy">
+      <span>ساتيك</span>
+    </a>
+    <nav class="nav-menu" id="navMenu" aria-label="القائمة الرئيسية">
+      <ul class="nav-links" id="navLinks" role="menubar">
+        <li role="none"><a role="menuitem" href="index.html#home">الرئيسية</a></li>
+        <li role="none"><a role="menuitem" href="index.html#about">من نحن</a></li>
+        <li role="none"><a role="menuitem" href="index.html#projects">المشاريع</a></li>
+        <li role="none"><a role="menuitem" href="index.html#contact">تواصل معنا</a></li>
+      </ul>
+    </nav>
+    <div class="menu-container">
+        <button id="hamburger" class="hamburger" aria-label="قائمة">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <button id="lang-switcher" class="lang-switcher">EN</button>
+    </div>
+    <div class="backdrop" id="backdrop" aria-hidden="true"></div>
+  </header>
+
+  <main class="hero fade-in" id="home">
+    <h1>نبذة عن فريق ساتيك السعودي</h1>
+      <div class="info-cards">
+  <div class="card">
+    <div class="card-img-container">
+      <img src="assets/profile.jpg" alt="صورة تعريفية" class="card-img">
+    </div>
+    <h2>عاصم آل دهيس</h2>
+    <div class="card-icons">
+      <a href="#" title="HTML"><i class="fab fa-html5"></i></a>
+      <a href="#" title="CSS"><i class="fab fa-css3"></i></a>
+      <a href="#" title="JS"><i class="fab fa-square-js"></i></a>
+    </div>
+    <p>وصف مختصر عن العضو.</p>
+  </div>
+  <div class="card">
+    <div class="card-img-container">
+      <img src="assets/profile2.jpg" alt="صورة تعريفية" class="card-img">
+    </div>
+    <h2>أسامة</h2>
+    <div class="card-icons">
+      <a href="#" title="HTML"><i class="fab fa-html5"></i></a>
+      <a href="#" title="CSS"><i class="fab fa-css3"></i></a>
+      <a href="#" title="JS"><i class="fab fa-square-js"></i></a>
+    </div>
+    <p>وصف مختصر عن العضو.</p>
+  </div>
+  <div class="card">
+    <div class="card-img-container">
+      <img src="assets/profile3.jpg" alt="صورة تعريفية" class="card-img">
+    </div>
+    <h2>إلياس</h2>
+    <div class="card-icons">
+      <a href="#" title="HTML"><i class="fab fa-html5"></i></a>
+      <a href="#" title="CSS"><i class="fab fa-css3"></i></a>
+      <a href="#" title="JS"><i class="fab fa-square-js"></i></a>
+    </div>
+    <p>وصف مختصر عن العضو.</p>
+  </div>
+</div>
+</div>
+<button class="learn-more" style="margin-top: 40px;" onclick="window.location.href='index.html'">
+    <span class="circle" aria-hidden="true">
+        <span class="icon arrow"></span>
+    </span>
+    <span class="button-text">العودة</span>
+</button>
+</button>
+  </main>
+  <footer>
+    <p>© 2025 جميع الحقوق محفوظة - فريق ساتيك</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
