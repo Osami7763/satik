@@ -6,7 +6,6 @@
   <meta name="theme-color" content="#006C35">
   <title>فريق ساتيك</title>
   <link rel="manifest" href="manifest.json">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,82 +18,126 @@
 </head>
 <body>
   <header class="header">
-    <a class="logo" href="index.html">
+    <a class="logo" href="#home">
       <img src="assets/logo.jpg" alt="شعار ساتيك" width="40" height="40" loading="lazy">
       <span>ساتيك</span>
     </a>
+    
     <nav class="nav-menu" id="navMenu" aria-label="القائمة الرئيسية">
       <ul class="nav-links" id="navLinks" role="menubar">
-        <li role="none"><a role="menuitem" href="index.html#home">الرئيسية</a></li>
-        <li role="none"><a role="menuitem" href="index.html#about">من نحن</a></li>
-        <li role="none"><a role="menuitem" href="index.html#projects">المشاريع</a></li>
-        <li role="none"><a role="menuitem" href="index.html#contact">تواصل معنا</a></li>
+        <li role="none"><a role="menuitem" href="#home">الرئيسية</a></li>
+        <li role="none"><a role="menuitem" href="#about">من نحن</a></li>
+        <li role="none"><a role="menuitem" href="#projects">المشاريع</a></li>
+        <li role="none"><a role="menuitem" href="#contact">تواصل معنا</a></li>
       </ul>
     </nav>
+    
     <div class="menu-container">
-        <button id="hamburger" class="hamburger" aria-label="قائمة">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-        <button id="lang-switcher" class="lang-switcher">EN</button>
+      <button id="hamburger" class="hamburger" aria-label="قائمة">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <button id="lang-switcher" class="lang-switcher">EN</button>
     </div>
+    
     <div class="backdrop" id="backdrop" aria-hidden="true"></div>
   </header>
 
   <main class="hero fade-in" id="home">
-    <h1>نبذة عن فريق ساتيك السعودي</h1>
-      <div class="info-cards">
-  <div class="card">
-    <div class="card-img-container">
-      <img src="assets/profile.jpg" alt="صورة تعريفية" class="card-img">
-    </div>
-    <h2>عاصم آل دهيس</h2>
-    <div class="card-icons">
-      <a href="#" title="HTML"><i class="fab fa-html5"></i></a>
-      <a href="#" title="CSS"><i class="fab fa-css3"></i></a>
-      <a href="#" title="JS"><i class="fab fa-square-js"></i></a>
-    </div>
-    <p>وصف مختصر عن العضو.</p>
-  </div>
-  <div class="card">
-    <div class="card-img-container">
-      <img src="assets/profile2.jpg" alt="صورة تعريفية" class="card-img">
-    </div>
-    <h2>أسامة</h2>
-    <div class="card-icons">
-      <a href="#" title="HTML"><i class="fab fa-html5"></i></a>
-      <a href="#" title="CSS"><i class="fab fa-css3"></i></a>
-      <a href="#" title="JS"><i class="fab fa-square-js"></i></a>
-    </div>
-    <p>وصف مختصر عن العضو.</p>
-  </div>
-  <div class="card">
-    <div class="card-img-container">
-      <img src="assets/profile3.jpg" alt="صورة تعريفية" class="card-img">
-    </div>
-    <h2>إلياس</h2>
-    <div class="card-icons">
-      <a href="#" title="HTML"><i class="fab fa-html5"></i></a>
-      <a href="#" title="CSS"><i class="fab fa-css3"></i></a>
-      <a href="#" title="JS"><i class="fab fa-square-js"></i></a>
-    </div>
-    <p>وصف مختصر عن العضو.</p>
-  </div>
-</div>
-</div>
-<button class="learn-more" style="margin-top: 40px;" onclick="window.location.href='index.html'">
-    <span class="circle" aria-hidden="true">
+    <h1>فريق ساتيك السعودي</h1>
+    <p>نُطوّر مشاريع وأفكار تقنية سعودية تصنع أثرًا حقيقيًا.</p>
+    <button class="learn-more" href="#projects">
+      <span class="circle" aria-hidden="true">
         <span class="icon arrow"></span>
-    </span>
-    <span class="button-text">العودة</span>
-</button>
-</button>
+      </span>
+      <a class="button-text" href="#projects">اكثر</a>
+    </button>
   </main>
+
+  <section class="page fade-in" id="about">
+    <h1>من نحن</h1>
+    <p>ساتيك فريق سعودي شغوف بالتقنية وريادة الأعمال. نحول الأفكار إلى منتجات رقمية عملية بجودة عالية وتجربة استخدام ممتازة.</p>
+    <ul class="bullets">
+      <li>قيمنا: الاحترافية، الشفافية، روح الفريق.</li>
+      <li>مجالاتنا: الويب، أدوات تعليمية، حلول ذكية.</li>
+      <li>هدفنا: منتج عربي يفخر به المستخدم.</li>
+    </ul>
+    <button class="learn-more" style="width: 12rem; height: auto;">
+      <span class="circle" aria-hidden="true">
+        <span class="icon arrow"></span>
+      </span>
+      <a class="button-text" href="about.html">تعرف على الفريق</a>
+    </button>
+  </section>
+
+  <section class="page fade-in" id="projects">
+    <h1>المشاريع</h1>
+    
+    <button class="accordion">لوحة تحكم للمدارس</button>
+    <div class="panel">
+      <p>لوحة تحكم مدرسية ذكية، صممت لإدارة المدرسة بسهولة وفاعلية، تجمع كل المعلومات والمهام في مكان واحد لتسهيل متابعة الطلاب، المقررات، والأنشطة اليومية بطريقة منظمة وآمنة.</p>
+    </div>
+
+    <button class="accordion">موسوعة تفاعلية</button>
+    <div class="panel">
+      <p>موسوعة تفاعلية سعودية، تجمع المعرفة المحلية بطريقة ديناميكية تسمح للمستخدمين بالتفاعل، الاكتشاف، والمساهمة، لتكون مرجعًا رقميًا مبتكرًا لكل المهتمين بالثقافة والتقنية في المملكة.</p>
+    </div>
+
+    <button class="accordion">نظام تشغيل سعودي</button>
+    <div class="panel">
+      <p>نظام تشغيل سعودي بالكامل، صُمم ليعكس رؤية المملكة في الاعتماد على حلول وطنية، مع بناء بيئة رقمية مستقلة وآمنة تسهم في تطوير التقنية المحلية وتعزيز الابتكار الوطني.</p>
+    </div>
+  </section>
+  <section class="page fade-in" id="contact">
+    <h1>تواصل معنا</h1>
+    <div class="social-grid" aria-label="روابط التواصل">
+      <a class="social-card instagram" href="https://instagram.com/youraccount" target="_blank" rel="noopener" aria-label="حساب إنستقرام">
+        <i class="icon fa-brands fa-instagram" aria-hidden="true"></i>
+        <div class="text">
+          <h3 class="title">الإنستقرام</h3>
+          <p class="desc">فيه الإعلانات عن المشاريع والأحداث</p>
+        </div>
+      </a>
+
+      <a class="social-card tiktok" href="https://www.tiktok.com/@projectsatech?_t=ZS-8yxgc5Ew0XP&_r=1" target="_blank" rel="noopener" aria-label="حساب تيك توك">
+        <i class="icon fa-brands fa-tiktok" aria-hidden="true"></i>
+        <div class="text">
+          <h3 class="title">تيك توك</h3>
+          <p class="desc">فيه مشاريع الفريق ولقطات ممتعة</p>
+        </div>
+      </a>
+
+      <a class="social-card x" href="https://x.com/youraccount" target="_blank" rel="noopener" aria-label="حساب X">
+        <i class="icon fa-brands fa-x-twitter" aria-hidden="true"></i>
+        <div class="text">
+          <h3 class="title">X</h3>
+          <p class="desc">فيه أحدث الأخبار والتحديثات</p>
+        </div>
+      </a>
+
+      <a class="social-card discord" href="https://discord.com/invite/yMbkN4jT" target="_blank" rel="noopener" aria-label="سيرفر دِسكورد">
+        <i class="icon fa-brands fa-discord" aria-hidden="true"></i>
+        <div class="text">
+          <h3 class="title">دِسكورد</h3>
+          <p class="desc">سيرفر المجتمع—انضم وتابع كل جديد</p>
+        </div>
+      </a>
+
+      <a class="social-card email" href="mailto:you@example.com" aria-label="مراسلة عبر الإيميل">
+        <i class="icon fa-solid fa-envelope" aria-hidden="true"></i>
+        <div class="text">
+          <h3 class="title">الإيميل</h3>
+          <p class="desc">للتواصل والاستفسارات مباشرة</p>
+        </div>
+      </a>
+    </div>
+  </section>
+
   <footer>
     <p>© 2025 جميع الحقوق محفوظة - فريق ساتيك</p>
   </footer>
 
-  <script src="js/script.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
