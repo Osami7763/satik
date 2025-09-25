@@ -40,6 +40,7 @@ html, body {
 
 body {
   margin: 0;
+  padding-top: 64px;
   font-family: 'Cairo', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
   background: var(--bg);
   color: var(--text);
@@ -58,16 +59,6 @@ body {
   padding: 12px 20px;
   background: #000;
   border-bottom: 1px solid #111;
-}
-
-/* ===================== Body ===================== */
-body {
-  margin: 0;
-  padding-top: 64px; /* أضفنا هذا السطر لإزاحة المحتوى لأسفل */
-  font-family: 'Cairo', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-  background: var(--bg);
-  color: var(--text);
-  overflow-x: hidden;
 }
 .logo {
   display: flex;
@@ -517,6 +508,3 @@ button:active .button-text {
   max-height: 500px; /* يجب أن تكون قيمة كبيرة بما يكفي لأي محتوى */
   padding: 10px;
 }
-
-
-/*شكراً لك يا اسامه وابشرك عدلت على الخطاء حق الزر */
